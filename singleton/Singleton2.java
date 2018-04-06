@@ -5,7 +5,7 @@ package main.java.com.usher.DesignPatterns.singleton;
  * 假如有两个线程同时调用Singleton.getInstance()，
  * 而这时uniqueInstance还没有初始化，
  * 那么有可能会出现调用Singleton.getInstance()方法返回不同的实例
- * 
+ *
  * 只需要对 getUniqueInstance() 方法加锁，
  * 那么在一个时间点只能有一个线程能够进入该方法，
  * 从而避免了对 uniqueInstance 进行多次实例化的问题。
